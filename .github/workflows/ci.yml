@@ -57,10 +57,10 @@ jobs:
           MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
         run: |
           cd jpo-geojsonconverter/jpo-ode
-          mvn deploy -DskipTests -DaltDeploymentRepository=stol-maven-deps::default::http://localhost:8081/repository/stol-maven-deps/
+          mvn deploy -DskipTests -DaltDeploymentRepository=stol-maven-deps::default::https://55a4-68-183-28-222.ngrok-free.app/repository/stol-maven-deps/
           cd ../jpo-geojsonconverter
-          mvn deploy -DskipTests -DaltDeploymentRepository=stol-maven-deps::default::http://localhost:8081/repository/stol-maven-deps/
+          mvn deploy -DskipTests -DaltDeploymentRepository=stol-maven-deps::default::https://55a4-68-183-28-222.ngrok-free.app/repository/stol-maven-deps/
           cd $GITHUB_WORKSPACE/test-message-sender
-          mvn deploy -DskipTests -DaltDeploymentRepository=stol-maven-deps::default::http://localhost:8081/repository/stol-maven-deps/
+          mvn deploy -DskipTests -DaltDeploymentRepository=stol-maven-deps::default::https://55a4-68-183-28-222.ngrok-free.app/repository/stol-maven-deps/
           cd $GITHUB_WORKSPACE/jpo-conflictmonitor
-          mvn deploy -DskipTests -DaltDeploymentRepository=stol-maven-deps::default::http://localhost:8081/repository/stol-maven-deps/
+          mvn deploy -DskipTests -DaltDeploymentRepository=stol-maven-deps::default::https://55a4-68-183-28-222.ngrok-free.app/repository/stol-maven-deps/
