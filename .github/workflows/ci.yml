@@ -56,4 +56,5 @@ jobs:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
         run: |
+          cd jpo-conflictmonitor
           mvn deploy -DskipTests -DaltDeploymentRepository=stol-maven-deps::default::http://localhost:8081/repository/stol-maven-deps/
