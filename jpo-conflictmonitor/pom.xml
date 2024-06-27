@@ -195,6 +195,13 @@
       <releases><enabled>false</enabled></releases>
     </repository>
   </repositories>
+  <distributionManagement>
+      <repository>
+          <id>stol-maven-deps</id>
+          <url>http://localhost:8081/repository/stol-maven-deps/</url>
+      </repository>
+  </distributionManagement>
+
   <build>
     <finalName>${project.artifactId}</finalName>
     <plugins>
